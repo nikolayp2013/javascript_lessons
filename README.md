@@ -1,6 +1,6 @@
 # javascript_lessons
 Уроки JavaScript для начинающих <br />
-Текущий изученный урок:0 <br />
+Текущий изученный урок:1 <br />
 https://itproger.com/course/javascript <br />
 
 Уроки JavaScript | #1 - Что такое JS? Введение <br />
