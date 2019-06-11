@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Изучаем язык JavaScript</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script type="text/javascript">
+		function buttonClick (button) {
+			alert("Вы нажали кнопку. Кнопка имеет имя " + button.name + ", также value равно " + button.value + ".");
+		}
+		var counter = 0;
+		function OnMouseCounter (element) {
+			counter++;
+			//innerHTML - может записать HTML код в объект к которому ссылаемся
+			element.innerHTML = "На это текст было наведено " + counter +" раз";
+		}
+	</script>
+<head>
+<body>
+	<!-- <body onload="alert('Страница загружена')"> -->
+	<!-- как только загрузистя страничка сработает событие onload -->
+	<!-- Комментарий -->
+	<script type="text/javascript">
+		// Комментарий
+		/* Комментарий */
+	</script>
+	<input type="button" name="b" value="Click me" onclick="buttonClick (this)" />
+	
+	<span onmouseover="OnMouseCounter (this)">На это текст было наведено 0 раз</span>
+</body>
+</html>
