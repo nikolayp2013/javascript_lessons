@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Изучаем язык JavaScript</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script type="text/javascript">
+		// Комментарий
+		/* Комментарий */
+		//var id = setInterval("myFunct_1()",1000);
+		var counter = 0;
+		
+		/*function myFunct_1 () {
+			counter++;
+			alert("Секунд прошло - " + counter);
+			if(counter == 3) clearInterval(id);
+		}*/
+		
+		function timer () {
+			counter++;
+			document.getElementById("count").innerHTML = counter;
+			setTimeout("timer()", 1000);
+		}
+	</script>
+<head>
+<body onload="timer()">
+	<!-- Комментарий -->
+	Секунд прошло <span id="count">-1</span>
+</body>
+</html>
